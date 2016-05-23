@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Particles and Boids</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				color: #808080;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+
+				background-color: #ffffff;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="container"></div>
+		<canvas id="processing_particle"></canvas>
+		<canvas id="processing_boid"></canvas>
+
+		<!-- Physics - Boid -->
+		<script src="assets/js/math/Vector3.js"></script>
+		<script src="assets/js/physics/physics_boid.js"></script>
+
+		<!-- Physics - Particle -->
+		<script src="assets/js/physics/physics_particle.js"></script>
+
+		<!-- Renderer -->
+		<script src="assets/js/renderers/processing.min.js"></script>
+		<script src="assets/js/renderers/render_processing_particle.js"></script>
+		<script src="assets/js/renderers/render_processing_boid.js"></script>
+		
+	</body>
+</html>
