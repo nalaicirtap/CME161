@@ -21,16 +21,10 @@ def boids():
 def send_assets(path):
     return send_from_directory('app/assets/', path)
 
-if __name__ == "__main__":
-	port = int(os.environ.get("PORT", 5050))
-	app.run(host='0.0.0.0', port=port, debug=False)
-
-# set debug=True if you want to have auto-reload on changes
-# this is great for developing
 
 
 import json, collections
-@app.route('/trellis', methods=['GET'])
+@app.route('/trellis/', methods=['GET'])
 def get_trellis():
 	# This method should return the entire data
 	# Replace the following line with your own code
@@ -81,3 +75,11 @@ def get_graph_limit(n_entries):
 	# Replace the following line with your own code
 	with open('app/assets/data/trellis.json') as data_file:
 		return json.dumps(make_data_graph(json.load(data_file)[:n_entries]))
+
+
+if __name__ == "__main__":
+	port = int(os.environ.get("PORT", 5050))
+	app.run(host='0.0.0.0', port=port, debug=False)
+
+# set debug=True if you want to have auto-reload on changes
+# this is great for developing
