@@ -41,7 +41,7 @@ def get_trellis_limit(n_entries):
 def make_data_graph(data_list_in):
 	# This method should convert the raw trellis data into the graph format
 	# Replace the following line with your own code
-	dx = 0
+	idx = 0
 	names = collections.OrderedDict()
 	for e in data_list_in:
 		to = e['to'][:7] # truncate
