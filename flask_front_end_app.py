@@ -12,7 +12,7 @@ def three():
     return app.make_response(open('app/assets/html/threejs_particles.html').read())
 
 @app.route("/boids/")
-def three():
+def boids():
     return app.make_response(open('app/assets/html/boids_threejs.html').read())
 
 # send assets (ex. assets/js/random_triangle_meshes/random_triangle_meshes.js)
@@ -81,4 +81,3 @@ def get_graph_limit(n_entries):
 	# Replace the following line with your own code
 	with open('app/assets/data/trellis.json') as data_file:
 		return json.dumps(make_data_graph(json.load(data_file)[:n_entries]))
-		
