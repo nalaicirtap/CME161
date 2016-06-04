@@ -36,7 +36,8 @@ Boid.prototype.create_geometry = function() {
 Boid.prototype.create_material = function() {
     // assign a random color from HSL space
     this.color = new THREE.Color(); // http://threejs.org/docs/#Reference/Math/Color
-    this.color.setHSL(Math.random(), .85, .5);
+    this.colorH = Math.random();
+    this.color.setHSL(this.colorH, .85, .5);
 
     /**
         * Action Required: fill this in using some material with specular + diffuse lighting
@@ -116,5 +117,5 @@ Boid.prototype.update_mesh = function() {
     var momentum = this.velocity.length() * this.radius;
     if( momentum > this.max_momentum){ this.max_momentum = momentum; this.range_momentum = this.max_momentum - this.min_momentum; }
     if( momentum < this.min_momentum){ this.min_momentum = momentum; this.range_momentum = this.max_momentum - this.min_momentum; }
-    this.mesh.material.color.setHSL(Math.random(), momentum/this.range_momentum * 1.1, momentum/this.range_momentum * 0.4);
+    this.mesh.material.color.setHSL(this.colorH, momentum/this.range_momentum * 1.1, momentum/this.range_momentum * 0.4);
 }
