@@ -23,7 +23,7 @@ var hist = function(data_in, chart_id, value, chart_title) {
 
   var div = d3.select("#crossfilter_container").append("div").attr("id", chart_id);
 
-  div.append("h2").text(chart_title);
+  div.append("h4").text(chart_title);
 
   var svg = div.append("svg")
     .attr("width", width + margin.left + margin.right)

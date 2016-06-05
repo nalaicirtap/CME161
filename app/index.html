@@ -22,7 +22,8 @@
    		<link href ='assets/css/d3js_desserts/d3js_desserts.css' rel = "sylesheet" type = "text/css">
 
    		<!-- crossfilter baseball -->
-   		<link href='http://seiyria.com/bootstrap-slider/css/bootstrap-slider.css' rel="stylesheet" type = "text/css" > <link rel="stylesheet" type="text/css" href='assets/css/crossfilter_baseball/crossfilter_baseball.css' >
+   		<link href='http://seiyria.com/bootstrap-slider/css/bootstrap-slider.css' rel="stylesheet" type = "text/css" > 
+   		<link rel="stylesheet" type="text/css" href='assets/css/crossfilter_baseball/crossfilter_baseball.css' >
    	
 
    		<!-- dcjs iris -->   
@@ -30,9 +31,8 @@
   		<link href ='assets/css/dcjs_iris/dcjs_iris.css' rel = "sylesheet" type = "text/css">
 
 </head>
-<body>
-	<a href="http://limitless-waters-48322.herokuapp.com/boids/"><h4 class="project-name">Three.js Boids Visualization</h4></a>
-	<a href="http://limitless-waters-48322.herokuapp.com/turing/"><h4 class="project-name">Three.js Turing Pattern Visualization</h4></a>
+
+<body>	
 	<!-- begin wrap -->		
 	<div id="wrap">
 	  
@@ -50,8 +50,15 @@
 						<h1>Visualization Portfolio of Patricia Lan</h1>
 						<h4><a href='http://web.stanford.edu/~dderiso/cme151/' target='_blank'>CME 161: Data Visualization</a> <small>Spring 2016</small></h4>
 						<hr>
+						<h3>three.js</h3>
+						<h4>[<a href="http://limitless-waters-48322.herokuapp.com/three/">Simple Particles</a>], [<a href="http://limitless-waters-48322.herokuapp.com/boids/">Boids</a>], [<a href="http://limitless-waters-48322.herokuapp.com/turing/">Turing Pattern</a>]</h4>
+						<hr>
 					</div>
 					<!-- end header -->
+
+					<hr>
+					<h3>c3.js</h3>
+					<br>
 
 					<!-- begin viz 1 c3js ebola-->
 					<div class="container-fluid" style="margin-top:10px;">
@@ -67,15 +74,26 @@
 					</div>
   					</div>
 					</div>
+					<hr>
 					<!-- end viz 1 -->
 				
 
 					<!-- begin viz 2 d3js desserts-->
+					<hr>
+					<h3>d3.js</h3>
+					<div class="container-fluid" style="margin-top:10px;">
+					<br>
 					<div id="hierarchy"></div>
+					</div>
+					<hr>
 
 					<!-- end viz 2 -->
 
 					<!-- begin viz 3 crossfilter baseball -->
+					<hr>
+					<h3>crossfilter.js</h3>
+					<br>
+
 					<div class="well">
 					  Filter # of Games Played:&nbsp&nbsp <b>10</b>
 					  <input id="n_games_slider" type="text" /> <b>1000</b>
@@ -113,43 +131,47 @@
 					  <button id="playerid_clear_button" type="submit" class="btn btn-default">Clear</button>
 					</div>
 
-					<div id = "crossfilter_container"></div>
+					<div id = "crossfilter_container" style="margin-top:100px;"></div>
+					<hr>
 					<!-- end viz 3 -->
 
 					<!-- begin viz 4 dcjs iris -->
+					<hr>
+					<h3>dc.js</h3>
+					<br>
 
 					<div id="resetButton"> </div>
 
 					<div style="float:left;">
-					  <h3>Sepal Length</h3>
+					  <h4>Sepal Length</h4>
 					  <div id="sepal_length_chart"></div>
 					</div>
 
 					<div style="float:left;">
-					  <h3>Species</h3>
+					  <h4>Species</h4>
 					  <div id="species_chart"></div>
 					</div>
 
 					<div style="float:left;">
-					  <h3>Sepal Width</h3>
+					  <h4>Sepal Width</h4>
 					  <div id="sepal_width_chart"></div>
 					</div>
 
 					<div style="float:left;">
-					  <h3>Petal Length</h3>
+					  <h4>Petal Length</h4>
 					  <div id="petal_length_chart"></div>
 					</div>
 
 					<div style="float:left;">
-					  <h3>Petal Width</h3>
+					  <h4>Petal Width</h4>
 					  <div id="petal_width_chart"></div>
 					</div>
-
 
 
 					<!-- end viz 4 -->
 
 				</div>
+				
 				<!-- end row -->
 
 			</div> 
